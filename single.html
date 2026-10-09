@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Instagrama</title>
@@ -99,20 +94,22 @@
 							<article class="post">
 								<header>
 									<div class="title">
-										<h2><a href="#">Flávio Bolsonaro lidera o primeiro turno e enfrenta Lula no segundo</a></h2>
-										<p>A disputa presidencial será decidida em 25 de outubro</p>
+										<h2><a href="index.html" id="article-title">Flávio Bolsonaro lidera o primeiro turno e enfrenta Lula no segundo</a></h2>
+										<p id="article-subtitle">A disputa presidencial será decidida em 25 de outubro</p>
 									</div>
 									<div class="meta">
-										<time class="published" datetime="2026-10-04">4 de outubro de 2026</time>
-										<a href="#" class="author"><span class="name">Redação</span><img src="images/avatar.jpg" alt="" /></a>
+										<time class="published" datetime="2026-10-04" id="article-date">4 de outubro de 2026</time>
+										<a href="#" class="author" id="article-author-link"><span class="name" id="article-author">Jornal do  Brasil</span><img id="article-author-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAiDjBgQXsVoFW95Wdnok36av6B9BtphbxUlAQC_8ULg&s" alt="" /></a>
 									</div>
 								</header>
-								<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
-								<p>O senador Flávio Bolsonaro (PL) terminou o primeiro turno da eleição presidencial à frente do presidente Luiz Inácio Lula da Silva (PT), com cerca de 47,5% dos votos válidos contra cerca de 45%, uma diferença próxima de 2,6 milhões de votos. Os dois disputam o segundo turno em 25 de outubro. O resultado contrariou o que indicava a maioria das pesquisas na reta final, que colocava Lula na frente.</p>
-								<p>Quando 90,95% das urnas estavam apuradas, Flávio liderava em 15 estados e Lula, em 12. Lula disse que esperava vencer já no primeiro turno, classificou o resultado como inesperado e afirmou que a campanha recomeça nesta segunda-feira (5). Flávio, que reuniu quase 56 milhões de votos, disse que o desempenho mostra o desejo do eleitorado por mudança e que a resposta definitiva virá em três semanas. O mandato do eleito começa em 1º de janeiro de 2027 e dura quatro anos.</p>
+								<span class="image featured"><img id="article-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxnqp-LFqcGmqWI9Nn5FcvXCcCuM4eetuKp15Tb3oJNA&s=10" alt="" /></span>
+								<div id="article-content">
+									<p>O senador Flávio Bolsonaro (PL) terminou o primeiro turno da eleição presidencial à frente do presidente Luiz Inácio Lula da Silva (PT), com cerca de 47,5% dos votos válidos contra cerca de 45%, uma diferença próxima de 2,6 milhões de votos. Os dois disputam o segundo turno em 25 de outubro. O resultado contrariou o que indicava a maioria das pesquisas na reta final, que colocava Lula na frente.</p>
+									<p>Quando 90,95% das urnas estavam apuradas, Flávio liderava em 15 estados e Lula, em 12. Lula disse que esperava vencer já no primeiro turno, classificou o resultado como inesperado e afirmou que a campanha recomeça nesta segunda-feira (5). Flávio, que reuniu quase 56 milhões de votos, disse que o desempenho mostra o desejo do eleitorado por mudança e que a resposta definitiva virá em três semanas. O mandato do eleito começa em 1º de janeiro de 2027 e dura quatro anos.</p>
+								</div>
 								<footer>
-									<ul class="stats">
-										<li><a href="#">Política</a></li>
+									<ul class="stats" id="article-stats">
+										<li><a href="#" id="article-category">Política</a></li>
 										<li><a href="#" class="icon solid fa-heart">28</a></li>
 										<li><a href="#" class="icon solid fa-comment">128</a></li>
 									</ul>
@@ -141,6 +138,182 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				const articles = {
+					"eleicao-presidencial": {
+						title: "Flávio Bolsonaro lidera o primeiro turno e enfrenta Lula no segundo",
+						subtitle: "A disputa presidencial será decidida em 25 de outubro",
+						date: "2026-10-04",
+						dateLabel: "4 de outubro de 2026",
+						author: "Jornal do Brasil",
+						authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAiDjBgQXsVoFW95Wdnok36av6B9BtphbxUlAQC_8ULg&s",
+						image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxnqp-LFqcGmqWI9Nn5FcvXCcCuM4eetuKp15Tb3oJNA&s=10",
+						category: "Política",
+						paragraphs: [
+							"O senador Flávio Bolsonaro (PL) terminou o primeiro turno da eleição presidencial à frente do presidente Luiz Inácio Lula da Silva (PT), com cerca de 47,5% dos votos válidos contra cerca de 45%, uma diferença próxima de 2,6 milhões de votos. Os dois disputam o segundo turno em 25 de outubro. O resultado contrariou o que indicava a maioria das pesquisas na reta final, que colocava Lula na frente.",
+							"Quando 90,95% das urnas estavam apuradas, Flávio liderava em 15 estados e Lula, em 12. Lula disse que esperava vencer já no primeiro turno, classificou o resultado como inesperado e afirmou que a campanha recomeça nesta segunda-feira (5). Flávio, que reuniu quase 56 milhões de votos, disse que o desempenho mostra o desejo do eleitorado por mudança e que a resposta definitiva virá em três semanas. O mandato do eleito começa em 1º de janeiro de 2027 e dura quatro anos."
+						],
+						hasStats: true
+					},
+					"governos-estaduais": {
+						title: "Governos estaduais: reeleições no 1º turno e segundo turno em vários estados",
+						subtitle: "Tarcísio, Cleitinho, Moro e Zucco vencem no primeiro turno; DF vai ao segundo turno",
+						date: "2026-10-04",
+						dateLabel: "4 de outubro de 2026",
+						author: "Redação",
+						authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9OArYGw5ZEu5GhI000lCCpuoVoQ_YbuHyzAap84S37w&s=10",
+						image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzGpGQebEwB66pDK7L5PO0QY5Po6dkehyZ0JQwcHXMz9JmeYL-fx7S6oc&s=10",
+						category: "Política",
+						paragraphs: [
+							"Tarcísio de Freitas (Republicanos) foi reeleito em São Paulo com cerca de 63% dos votos válidos, e Jerônimo Rodrigues (PT), Raquel Lyra (PSD) e Elmano de Freitas (PT) venceram na Bahia, em Pernambuco e no Ceará. Mato Grosso, Mato Grosso do Sul e Goiás também reelegeram seus governadores.",
+							"Em Minas Gerais, Cleitinho Azevedo (Republicanos) foi eleito com cerca de 55%; no Paraná, Sergio Moro (PL) passou de 50%; e, no Rio Grande do Sul, Luciano Zucco (PL) foi eleito. O Distrito Federal terá segundo turno entre Celina Leão (PP) e Leandro Grass (PT). No Rio de Janeiro, Douglas Ruas (PL) e Eduardo Paes (PSD) estão classificados, mas o quadro ainda pode mudar conforme decisão do TSE sobre os votos de Anthony Garotinho."
+						],
+						hasStats: true
+					},
+					"mercado": {
+						title: "Mercado reage ao resultado do primeiro turno",
+						subtitle: "ETF brasileiro negociado nos EUA sobe cerca de 7% fora do horário regular",
+						date: "2026-10-04",
+						dateLabel: "4 de outubro de 2026",
+						author: "Jornal do Brasil",
+						authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAiDjBgQXsVoFW95Wdnok36av6B9BtphbxUlAQC_8ULg&s",
+						image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtXfZG7CJvjGVAivPc2PpfpxWBvUQj8XmaMPEK2do3nA&s=10",
+						category: "Economia",
+						paragraphs: [
+							"Logo após a divulgação do resultado, o EWZ, principal ETF de ações brasileiras negociado nos Estados Unidos, avançava cerca de 7% no after-market, enquanto os ADRs da Petrobras e da Vale subiam por volta de 5%.",
+							"Analistas avaliam que o segundo turno já estava precificado, mas que a vantagem de Flávio Bolsonaro foi maior do que a esperada e reforçou a expectativa de vitória da oposição. Segundo especialistas, a reação do mercado nesta segunda-feira (5) deve ser diferente da observada em 2022."
+						],
+						hasStats: true
+					},
+					"calendario-eleitoral": {
+						title: "Eleições 2026: resultados e próximos passos",
+						subtitle: "Resumo dos dados do primeiro turno e do calendário até a posse",
+						date: "2026-10-05",
+						dateLabel: "5 de outubro de 2026",
+						author: "Redação",
+						authorImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9OArYGw5ZEu5GhI000lCCpuoVoQ_YbuHyzAap84S37w&s=10",
+						image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAWuu1viit1Cw7VycDV3om-pLMgPjwURaxlivGsr9ZLQ&s=10",
+						category: "Serviço",
+						paragraphs: [
+							"O primeiro turno ocorreu em 4 de outubro. A apuração é feita pelo TSE, e o segundo turno está marcado para 25 de outubro.",
+							"Quem precisar justificar a ausência tem até 3 de dezembro. A diplomação deve ocorrer até 19 de dezembro, e a posse está prevista para 1º de janeiro de 2027."
+						]
+					},
+					"nikolas-ferreira": {
+						title: "Nikolas Ferreira é o deputado federal mais votado da história",
+						date: "2026-10-04",
+						dateLabel: "4 de outubro de 2026",
+						image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVSyTYreaIfgoBrR8UwvR5pTvFaEbL4Cbu6ozw6CJO5w&s=10",
+						category: "Política",
+						paragraphs: ["Nikolas Ferreira (PL-MG) obteve 3.119.318 votos e se tornou o deputado mais votado da história da Câmara. Lucas Pavanato (PL-SP) ficou em segundo, com 3.038.438. Em 2022, Nikolas havia conquistado o recorde da época com 1.492.047 votos, ou seja, mais que dobrou a própria marca."]
+					},
+					"senadoras-df": {
+						title: "DF terá três senadoras, algo inédito em todo o país",
+						date: "2026-10-04",
+						dateLabel: "4 de outubro de 2026",
+						image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP9vjVaAzkArjTYss76Z04MqSOG4d8ztSRX-Jz6sE51g&s=10",
+						category: "Política",
+						paragraphs: ["Michelle Bolsonaro (PL) e Bia Kicis (PL) foram eleitas e se juntam a Damares Alves (Republicanos), formando a primeira bancada estadual com três mulheres no Senado. Michelle teve cerca de 29% dos votos válidos e Bia, 27,4%; Leila do Vôlei (PDT), que tentava a reeleição, ficou em terceiro. A posse será em fevereiro de 2027."]
+					},
+					"missao-oea": {
+						title: "OEA não registra incidentes relevantes nos locais que visitou",
+						date: "2026-10-04",
+						dateLabel: "4 de outubro de 2026",
+						image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyROr7su2fsC8Cg_3WkRLK8dEbQgLfhzgwMwUOV0_Onw&s=10",
+						category: "Política",
+						paragraphs: ["A missão da OEA reuniu 91 observadores de 23 nacionalidades, visitou 831 seções no DF e em 22 estados e concluiu que a votação ocorreu sem incidentes graves. O relatório preliminar também alertou para a desinformação sobre as urnas, a forte judicialização das campanhas e a ausência de debates televisivos entre os presidenciáveis. Vale registrar essa ressalva, porque a manchete sozinha passa uma imagem mais “limpa” do relatório."]
+					},
+					"justificativa-ausencia": {
+						title: "Quem não votou pode justificar a ausência até 3 de dezembro",
+						date: "2026-10-04",
+						dateLabel: "4 de outubro de 2026",
+						image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcY82FheAvmXU9UYtX6kzJgISEAUpHqBuOzeeKYjInGA&s=10",
+						category: "Serviço",
+						paragraphs: ["Quem faltou ao primeiro turno tem até 3 de dezembro para justificar, pelo e-Título, pelo Autoatendimento Eleitoral ou em cartório eleitoral. Quem faltar também ao segundo turno (25 de outubro) precisa de outra justificativa, com prazo até 8 de janeiro de 2027. Três ausências seguidas sem justificativa nem pagamento de multa podem levar ao cancelamento do título."]
+					},
+					"flamengo-brasileirao": {
+						title: "Flamengo lidera o Brasileirão com 60 pontos em 28 jogos",
+						date: "2026-09-22",
+						dateLabel: "22 de setembro de 2026",
+						image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa3fdJjGgjZopneV-evcowoD_kGgltSPFIGViMNAC-Jg&s=10",
+						category: "Esportes",
+						paragraphs: ["Os 60 pontos em 28 jogos eram reais, da classificação após a 28ª rodada. Mas a situação mudou hoje (8/10): o Flamengo empatou por 2 a 2 com o Santos na Vila Belmiro, na 29ª rodada, e chegou a 61 pontos, mantendo a liderança. O Palmeiras venceu o Bahia por 1 a 0 e subiu para 60 pontos, a apenas um do líder. Sugiro trocar o título por algo como “Flamengo empata com o Santos e vê o Palmeiras encostar na liderança do Brasileirão”."]
+					},
+					"segundo-turno": {
+						title: "Segundo turno será em 25 de outubro; mandato começa em janeiro de 2027",
+						date: "2026-10-04",
+						dateLabel: "4 de outubro de 2026",
+						image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0l6CwMJsb7-EnHsCuBZmOye-WkV27MImG7TiYbWKyIQ&s=10",
+						category: "Serviço",
+						paragraphs: ["Como ninguém passou de 50% dos votos válidos, Lula (PT) e Flávio Bolsonaro (PL) voltam às urnas em 25 de outubro, e o eleito toma posse em 5 de janeiro de 2027. Com 99,85% das urnas apuradas, Flávio tinha 47,07% dos votos válidos e Lula, 45,12%."]
+					},
+					"voto-exterior": {
+						title: "Voto no exterior (parcial): Lula soma mais votos; Flávio vence no Japão",
+						date: "2026-10-04",
+						dateLabel: "4 de outubro de 2026",
+						image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwLLXULyVecXmrIuq4pEUnikyywvp33VvNaR7Xrd55RA&s=10",
+						category: "Política",
+						paragraphs: ["Com o resultado fechado, Lula teve 47,57% (157.387 votos) e Flávio, 43,49% (143.900), com comparecimento de 37,31% dos eleitores aptos no exterior. Lula liderou em 64 países e Flávio em 36. No Japão, Flávio teve 24.601 votos contra 5.234 de Lula, a maior vantagem individual entre os países. No início da apuração, Flávio chegou a liderar a soma por causa do Japão, mas Lula assumiu a frente conforme novos boletins entraram."]
+					},
+					"interferencia-estrangeira": {
+						title: "PF e TSE não veem indício concreto de interferência estrangeira",
+						date: "2026-10-04",
+						dateLabel: "4 de outubro de 2026",
+						image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnwifB_WiYwO0Ar3ABBTI7HWt06VO76LmdzdyQaYwPRw&s=10",
+						category: "Política",
+						paragraphs: ["O presidente do TSE, Nunes Marques, disse que não há indicativo concreto de interferência internacional e que PF e Abin não enviaram relatório apontando risco. O diretor-geral da PF, Andrei Rodrigues, afirmou que não foram encontrados fatos que comprovem ameaça efetiva à Embaixada dos EUA ou a outras missões diplomáticas. Porém, a PF abriu um procedimento prévio sobre suspeita de interferência e financiamento externo, após representação da AGU, e a existência dele não significa que algo tenha sido comprovado. A manchete simplifica ao juntar as duas instituições. Sugestão: “TSE não vê indício concreto de interferência estrangeira; PF mantém apuração preliminar”."]
+					},
+					"urnas-substituidas": {
+						title: "TSE substituiu ao menos 421 urnas com defeito no dia da votação",
+						date: "2026-10-04",
+						dateLabel: "4 de outubro de 2026",
+						image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRISWWtC_o9cC4d97rqKUUcfQ_G8EpKFsnM-O8e0JzQCQ&s=10",
+						category: "Política",
+						paragraphs: ["Os 421 eram o total do primeiro boletim, até as 10h. O balanço final, divulgado às 18h, registrou 1.861 urnas substituídas, cerca de 0,34% do total. Outra versão do balanço final cita 1.904 (0,35% das 499.248 urnas), e nenhuma seção precisou recorrer ao voto em papel. Os dois números aparecem em veículos diferentes, então vale conferir no TSE antes de publicar. O TSE não divulga o motivo das trocas, que em geral decorrem de falhas operacionais, então “com defeito” é uma inferência. Sugestão: “TSE substitui cerca de 1,9 mil urnas no 1º turno, 0,35% do total, e nenhuma seção precisou de voto em papel”."]
+					}
+				};
+
+				const articleId = new URLSearchParams(window.location.search).get("noticia") || "eleicao-presidencial";
+				const article = Object.prototype.hasOwnProperty.call(articles, articleId) ? articles[articleId] : null;
+
+				if (article) {
+					document.getElementById("article-title").textContent = article.title;
+					const subtitle = document.getElementById("article-subtitle");
+					subtitle.textContent = article.subtitle || "";
+					subtitle.hidden = !article.subtitle;
+					document.getElementById("article-date").dateTime = article.date;
+					document.getElementById("article-date").textContent = article.dateLabel;
+					const authorLink = document.getElementById("article-author-link");
+					authorLink.hidden = !article.author;
+					if (article.author) {
+						document.getElementById("article-author").textContent = article.author;
+						document.getElementById("article-author-image").src = article.authorImage;
+					}
+					document.getElementById("article-image").src = article.image;
+					document.getElementById("article-image").alt = article.title;
+					document.getElementById("article-category").textContent = article.category;
+					document.getElementById("article-stats").hidden = !article.hasStats;
+					const content = article.paragraphs.length
+						? article.paragraphs
+						: ["Esta chamada não inclui um resumo complementar na página inicial."];
+					document.getElementById("article-content").replaceChildren(
+						...content.map((text) => {
+							const paragraph = document.createElement("p");
+							paragraph.textContent = text;
+							return paragraph;
+						})
+					);
+					document.title = `${article.title} - Instagrama`;
+				} else {
+					document.getElementById("main").replaceChildren();
+					const message = document.createElement("p");
+					message.textContent = "Notícia não encontrada.";
+					const backLink = document.createElement("a");
+					backLink.href = "index.html";
+					backLink.textContent = "Voltar às notícias";
+					document.getElementById("main").append(message, backLink);
+				}
+			</script>
  
 	</body>
 </html>
